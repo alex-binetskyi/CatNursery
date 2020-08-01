@@ -1,0 +1,284 @@
+.team {
+  background-color: $bg-black;
+}
+
+.team__wrapper {
+  @include media-tablet {
+    padding-top: 85px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 70px;
+  }
+}
+
+.team__wrapper .container {
+  @include media-tablet {
+    width: 100%;
+    max-width: none;
+  }
+
+  @include media-desktop {
+    max-width: 1366px;
+  }
+}
+
+.team__title {
+
+  @include media-tablet {
+    margin: 0 auto 23px;
+  }
+}
+
+.team__lead {
+  max-width: 510px;
+
+  @include media-tablet {
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.team__slider-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  @include media-tablet {
+    padding-bottom: 95px;
+  }
+
+  @include media-desktop {
+    margin: 0 90px;
+    padding: 0;
+  }
+}
+
+.team__slider {
+  @include media-desktop {
+    box-sizing: border-box;
+  }
+}
+
+.team__slider .slick-track {
+  display: flex;
+}
+
+.team__item {
+  position: relative;
+  width: 90.625vw;
+  margin: 0 4.6875vw;
+
+  @include media-tablet {
+    box-sizing: border-box;
+    width: 84.5vw;
+    margin: 0 9.5vw 0 6vw;
+    padding: 25px;
+    border: 0.5px solid rgba(160, 123, 80, 0.43);
+    background-color: transparent;
+  }
+
+  @include media-desktop {
+    width: 660px;
+    margin: 0 353px 0 353px;
+    padding: 23px 34px 23px 26px;
+    transform: translateX(172px);
+  }
+}
+
+.team__image-wrapper {
+  width: 43%;
+  max-width: 180px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    position: absolute;
+    right: 57px;
+    bottom: -95px;
+    width: 208px;
+    max-width: none;
+    height: 208px;
+    margin: 0;
+
+  }
+
+  @include media-desktop {
+    top: 0;
+    left: -313px;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+.team__image-wrapper img {
+  display: block;
+  width: 100%;
+}
+
+.team__item-content {
+  margin-top: -63px;
+  padding-top: 88px;
+  padding-bottom: 16px;
+  background-color: $bg-grey;
+  text-align: center;
+
+  @include media-tablet {
+    margin: 0;
+    padding: 70px 95px 75px 105px;
+    text-align: left;
+  }
+
+  @include media-desktop {
+    padding: 70px 100px;
+  }
+}
+
+.team__item-content blockquote {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.team__item-content p {
+  margin: 0 10px 30px;
+
+  @include media-tablet {
+    margin: 0 auto 43px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @include media-desktop {
+    width: 400px;
+    margin: 0 auto 43px 0;
+  }
+}
+
+.team__item-title {
+  display: block;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $gold;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.team__item-jobTitle {
+  display: block;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $gold;
+
+  @include media-tablet {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.team__social {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    margin: 0 auto 0 0;
+  }
+}
+
+.team__social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  path {
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include media-tablet {
+    &--facebook svg {
+      width: 7px;
+      height: 15px;
+    }
+
+    &--twitter svg {
+      width: 20px;
+      height: 14px;
+    }
+
+    &--vkontakte svg {
+      width: 21px;
+      height: 13px;
+    }
+  }
+}
+
+.team__social-link:hover path {
+  fill: $gold;
+}
+
+.team__buttons-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 54.375vw;
+  max-width: 228px;
+
+  @include media-tablet {
+    top: 94.5%;
+    left: calc(400px + ((100vw - 768px) * 0.918));
+    width: 290px;
+    max-width: none;
+    transform: none;
+  }
+
+  @include media-desktop {
+    width: 1160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.team__buttons-wrapper .slick-arrow {
+  width: 8px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url(../img/arrow-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include media-tablet {
+    height: 30px;
+    width: 12px;
+  }
+}
+
+.team__buttons-wrapper .slick-next {
+  transform: rotate(180deg);
+}

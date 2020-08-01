@@ -1,0 +1,45 @@
+//Примеси на ширину экрана.
+
+@mixin media-tablet {
+  @media (min-width: $mediaWidthTablet) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: $mediaWidthDesktop) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media (max-width: $mobileWidthOnly) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: 767px) and (max-width: 1365px) {
+    @content;
+  }
+}
+
+@mixin media-custom-min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-custom-max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+//Примеси на ретину.
+
+@mixin retin-screen {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}

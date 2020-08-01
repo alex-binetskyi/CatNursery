@@ -1,0 +1,255 @@
+.reviews__wrapper {
+  @include media-tablet {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  @include media-desktop {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+}
+
+.reviews__wrapper .container {
+  margin: 0;
+
+  @include media-tablet {
+    width: auto;
+    max-width: none;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 60px;
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
+}
+
+.reviews__slider-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  @include media-desktop {
+    margin: 0 90px;
+  }
+}
+
+
+.reviews__slider {
+
+}
+
+.reviews__slider .slick-track {
+  display: flex;
+}
+
+.reviews__item {
+  width: 90.625vw;
+  margin: 0 4.6875vw;
+
+  @include media-tablet {
+    width: 75.26vw;
+    margin: 0 12.37vw;
+  }
+
+  @include media-desktop {
+    position: relative;
+  }
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__img-wrapper {
+  width: 242px;
+  height: 166px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: 302px;
+    height: 208px;
+  }
+
+  @include media-desktop {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 480px;
+    height: 330px;
+  }
+}
+
+.reviews__item-content {
+  margin-top: -83px;
+  padding: 118px 30px 40px;
+  text-align: center;
+  background-color: $bg-black;
+
+  @include media-tablet {
+    margin-top: -95px;
+    padding-top: 131px;
+    padding-bottom: 33px;
+  }
+
+  @include media-desktop {
+    box-sizing: border-box;
+    width: 640px;
+    margin: 0 0 0 auto;
+    padding: 110px 85px 105px 145px;
+    text-align: start;
+  }
+}
+
+.reviews__item-content blockquote {
+  margin: 0;
+}
+
+.reviews__author-name {
+  display: block;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.reviews__author-text {
+  margin: 0 auto 25px;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.72);
+
+  @include media-tablet {
+    width: 56%;
+    max-width: none;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  @include media-desktop {
+    width: auto;
+    margin: 0 auto 40px 0;
+  }
+}
+
+.reviews__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px;
+  margin: 0 auto;
+
+  @include media-desktop {
+    width: 180px;
+    margin: 0 auto 0 0;
+  }
+}
+
+.reviews__date {
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(160, 123, 80, 0.94);
+
+  @include media-tablet {
+    line-height: 19px;
+  }
+}
+
+.reviews__social {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.reviews__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  border: 0.5px solid $gold;
+  transition: all 0.3s ease-in-out;
+
+  path {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    border-color: #ffffff;
+
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.reviews__buttons-wrapper {
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 90.625vw;
+
+  @include media-tablet {
+    top: 134px;
+    width: 482px;
+  }
+
+  @include media-desktop {
+    width: 1160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.reviews__buttons-wrapper .slick-arrow {
+  width: 8px;
+  height: 18px;
+  padding: 0;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/arrow-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include media-tablet {
+    width: 60px;
+    height: 16px;
+    background-image: url("../img/arrow-slider-big.svg");
+  }
+
+  @include media-desktop {
+    width: 12px;
+    height: 30px;
+    background-image: url("../img/arrow-slider.svg");
+  }
+}
+
+.reviews__buttons-wrapper .slick-next {
+  transform: rotate(180deg);
+}

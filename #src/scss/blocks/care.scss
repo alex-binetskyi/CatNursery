@@ -1,0 +1,86 @@
+.care {
+  @include media-custom-max(767px) {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-tablet@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @include media-tablet {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-tablet@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @include media-desktop {
+    background-image: url("../img/bg-care-desktop@1x.webp");
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-desktop@2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+.webp .care {
+  @include media-custom-max(767px) {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-tablet@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @include media-tablet {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-tablet@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @include media-desktop {
+    background-image: url("../img/bg-care-desktop@1x.webp");
+    background-size: cover;
+
+    @include retin-screen {
+      background-image: url("../img/bg-care-desktop@2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+
+.care__wrapper {
+  @include media-tablet {
+    padding-bottom: 105px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 100px;
+  }
+}
+
+.care__title {
+  margin-bottom: 40px;
+
+  @include media-desktop {
+    margin-bottom: 50px;
+  }
+}
